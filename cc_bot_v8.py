@@ -12,7 +12,7 @@ cc_bot_v8.py — اسکنِ کاوردکال (TSETMC) با محاسبهٔ «سو
   pip install python-telegram-bot==21.6 requests certifi pandas numpy
 
 اجرا (PowerShell):
-  $env:BOT_TOKEN="8149405036:AAEHyxQzXTOjXTOpetAHPCYyyFYhPUfPPtM"
+  $env:BOT_TOKEN=""
   python cc_bot_v8.py
 """
 import os, time, logging, math
@@ -31,7 +31,7 @@ logging.basicConfig(
 )
 log = logging.getLogger("cc-bot-v8")
 
-URL = "https://cdn.tsetmc.com/api/Instrument/GetInstrumentOptionMarketWatch/0"
+URL = ""
 
 # ===== فیلترهای ثابت (به‌صورت پیش‌فرض) =====
 MIN_VOLUME = int(os.getenv("MIN_VOLUME", "50"))       # حداقل حجم
